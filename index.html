@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TAU Africa Foundation Strategic Blueprint 2025 - Building Africa's Sovereign Wealth Through Kabiru Digital value Currency">
+    <meta name="theme-color" content="#2a5298">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TAU Foundation Blueprint">
+    <link rel="manifest" href="./manifest.json">
+    <title>TAU Africa Foundation - Sovereign Wealth Fund Blueprint 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.3);
+        }
+
+        .social-links {
+            position: fixed;
+            top: 8px;
+            right: 15px;
+            z-index: 200;
+            display: flex;
+            gap: 8px;
+        }
+
+        .social-links a {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+            background: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .scrolling-text {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+            margin: 15px auto;
+            background: rgba(0,0,0,0.15);
+            padding: 8px 0;
+            border-radius: 5px;
+            max-width: 90%;
+        }
+
+        .scrolling-text span {
+            display: inline-block;
+            animation: scroll 60s linear infinite;
+            font-size: 0.95em;
+            font-weight: 500;
+            color: #FFD700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 18px 25px;
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background: #2a5298;
+            color: white;
+            border-bottom-color: #7e22ce;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #7e22ce;
+            display: inline-block;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #5a67d8;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .highlight-box h3 {
+            color: white;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .highlight-box ul, .highlight-box ol {
+            color: white;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .value-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid #7e22ce;
+            transition: all 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .value-card h4 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .app-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .app-link {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: block;
+        }
+
+        .app-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #7e22ce 0%, #9333ea 100%);
+        }
+
+        .app-link h4 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 180px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #7e22ce;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 30px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #7e22ce;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #7e22ce;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: white;
+            color: #f5576c;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .vision-statement {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #5a67d8;
+            text-align: center;
+            padding: 30px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .benefit-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .tagline { font-size: 1.1em; }
+            nav a { padding: 12px 15px; font-size: 0.9em; }
+            .content { padding: 30px 20px; }
+            section { padding: 25px 20px; }
+            h2 { font-size: 1.8em; }
+        }
+
+        /* Welcome Page Overlay */
+        .welcome-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.98) 0%, rgba(42, 82, 152, 0.98) 100%);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .welcome-overlay.hidden {
+            display: none;
+        }
+
+        .welcome-box {
+            background: white;
+            max-width: 700px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            padding: 40px;
+            margin: 20px;
+        }
+
+        .welcome-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .welcome-logo h1 {
+            color: #1e3c72;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .welcome-logo p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .welcome-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .welcome-message h2 {
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .agreement-section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #7e22ce;
+        }
+
+        .agreement-section h3 {
+            color: #1e3c72;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+
+        .agreement-section p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .required-mark {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .optional-mark {
+            color: #28a745;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .btn-accept, .btn-deny {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+        }
+
+        .btn-accept {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-accept:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-deny {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-deny:hover {
+            background: #c82333;
+        }
+
+        .btn-accept:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .proceed-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .proceed-btn.active {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .proceed-btn.active:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(30, 60, 114, 0.4);
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .status-pending {
+            background: #ffc107;
+        }
+
+        .status-accepted {
+            background: #28a745;
+        }
+
+        .status-denied {
+            background: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page Overlay -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-box">
+            <div class="welcome-logo">
+                <h1>🌍 TAU AFRICA FOUNDATION</h1>
+                <p style="color: #FFD700; font-weight: 600;">Building Africa's Sovereign Wealth</p>
+            </div>
+
+            <div class="welcome-message">
+                <h2>Welcome, Great African child!</h2>
+                <p style="font-size: 1.05em; line-height: 1.6;">
+                    Welcome to your value management and wealth construction & maintenance portal. Build your wealth from here and expand with the system, dont forget to return back home to Africa. This platform works on your value addition, creation, and conversion for kabiru earnings.
+                </p>
+            </div>
+
+            <!-- NDA Section -->
+            <div class="agreement-section">
+                <h3>
+                    1. Non-Disclosure Agreement 
+                    <span class="required-mark">*Required</span>
+                    <span class="status-indicator status-pending" id="ndaStatus"></span>
+                </h3>
+                <p>
+                    All information, materials, documents, and intellectual property contained within this site are confidential and proprietary to TAU Africa Foundation. You agree NOT to disclose, share, copy, or distribute any content outside of internal arrangements or without prior written consent from TAU Africa Foundation or its founders.
+                </p>
+                <div class="button-group">
+                    <button class="btn-accept" onclick="acceptAgreement('nda')">Accept</button>
+                    <button class="btn-deny" onclick="denyAgreement('nda')">Deny</button>
+                </div>
+            </div>
+
+            <!-- Terms & Conditions Section -->
+            <div class="agreement-section">
+                <h3>
+                    2. Terms & Conditions 
+                    <span class="required-mark">*Required</span>
+                    <span class="status-indicator status-pending" id="termsStatus"></span>
+                </h3>
+                <p>
+                    By entering this portal, you agree to TAU Africa Foundation, Valenta Holdings, and all parts of the organization's terms and conditions, rules and regulations, and accept to be bound by them. This includes compliance with our code of conduct, ethical standards, and operational policies.
+                </p>
+                <div class="button-group">
+                    <button class="btn-accept" onclick="acceptAgreement('terms')">Accept</button>
+                    <button class="btn-deny" onclick="denyAgreement('terms')">Deny</button>
+                </div>
+            </div>
+
+            <!-- Value Sharing Section -->
+            <div class="agreement-section">
+                <h3>
+                    3. Value Sharing Commitment 
+                    <span class="optional-mark">(Optional)</span>
+                    <span class="status-indicator status-pending" id="valueStatus"></span>
+                </h3>
+                <p>
+                    TAU Africa operates on a value-based economy. Do you accept to share your values (knowledge, skills, work, services, products, asset, property etc) with the network to participate in the Kabiru mining ecosystem and wealth creation opportunities?
+                </p>
+                <div class="button-group">
+                    <button class="btn-accept" onclick="acceptAgreement('value')">Yes, I Accept</button>
+                    <button class="btn-deny" onclick="denyAgreement('value')">No, Maybe Later</button>
+                </div>
+            </div>
+
+            <button class="proceed-btn" id="proceedBtn" onclick="proceedToApp()" disabled>
+                Proceed to TAU Africa Portal
+            </button>
+
+            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9em;">
+                By proceeding, you acknowledge that you have read and understood all agreements above.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const agreements = {
+            nda: false,
+            terms: false,
+            value: null  // optional
+        };
+
+        function acceptAgreement(type) {
+            agreements[type] = true;
+            document.getElementById(type + 'Status').className = 'status-indicator status-accepted';
+            checkAllRequired();
+        }
+
+        function denyAgreement(type) {
+            if (type === 'value') {
+                // Optional - just mark as denied but allow proceed
+                agreements[type] = false;
+                document.getElementById(type + 'Status').className = 'status-indicator status-denied';
+                checkAllRequired();
+            } else {
+                // Required - show alert
+                agreements[type] = false;
+                document.getElementById(type + 'Status').className = 'status-indicator status-denied';
+                alert('This agreement is required to access the TAU Africa Portal. Please accept to continue.');
+                checkAllRequired();
+            }
+        }
+
+        function checkAllRequired() {
+            const allRequiredAccepted = agreements.nda && agreements.terms;
+            const proceedBtn = document.getElementById('proceedBtn');
+            
+            if (allRequiredAccepted) {
+                proceedBtn.disabled = false;
+                proceedBtn.classList.add('active');
+            } else {
+                proceedBtn.disabled = true;
+                proceedBtn.classList.remove('active');
+            }
+        }
+
+        function proceedToApp() {
+            if (agreements.nda && agreements.terms) {
+                // Store agreement acceptance
+                localStorage.setItem('tauAgreementsAccepted', 'true');
+                localStorage.setItem('tauValueSharing', agreements.value);
+                
+                // Hide welcome overlay
+                document.getElementById('welcomeOverlay').classList.add('hidden');
+            }
+        }
+
+        // Check if user has already accepted
+        window.addEventListener('DOMContentLoaded', function() {
+            const hasAccepted = localStorage.getItem('tauAgreementsAccepted');
+            if (hasAccepted === 'true') {
+                document.getElementById('welcomeOverlay').classList.add('hidden');
+            }
+        });
+
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered successfully:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <div class="container">
+        <div class="social-links">
+            <a href="https://youtube.com/@tauafrica8922?si=qS7qlCXzlecs0_W0" target="_blank" title="YouTube">▶️</a>
+            <a href="https://x.com/grouptauafrica?t=gZpP-oJztRgbkS3glQNBhg&s=09" target="_blank" title="X (Twitter)">𝕏</a>
+            <a href="https://vm.tiktok.com/ZMHvETdRFnjV5-x6Z5J/" target="_blank" title="TikTok">🎵</a>
+        </div>
+
+        <header>
+            <h1>TAU AFRICA FOUNDATION</h1>
+            <div class="scrolling-text">
+                <span>Community wealth creation through value chain tracking, backed by inherent Community values • Mining Kabiru digital asset through Proof-of-Value (PoV) mechanisms • Join our wealth creation program • Community wealth creation through value chain tracking, backed by inherent Community values • Mining Kabiru digital asset through Proof-of-Value (PoV) mechanism • Join our community wealth creation program</span>
+            </div>
+            <p class="tagline">Building Africa's Sovereign Wealth Through collaborative Kabiru Digital value Currency</p>
+            <p style="margin-top: 20px; font-size: 1.1em;"> Foundation's Strategic Blueprint 2025</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a onclick="document.getElementById('vision').scrollIntoView({behavior: 'smooth'})">Vision</a></li>
+                <li><a onclick="document.getElementById('auffi').scrollIntoView({behavior: 'smooth'})">AUFFI</a></li>
+                <li><a onclick="document.getElementById('valenta').scrollIntoView({behavior: 'smooth'})">Valenta</a></li>
+                <li><a onclick="document.getElementById('parsirai').scrollIntoView({behavior: 'smooth'})">Par Sirai</a></li>
+                <li><a onclick="document.getElementById('kabiru').scrollIntoView({behavior: 'smooth'})">Kabiru Token</a></li>
+                <li><a onclick="document.getElementById('ecosystem').scrollIntoView({behavior: 'smooth'})">Ecosystem</a></li>
+                <li><a onclick="document.getElementById('benefits').scrollIntoView({behavior: 'smooth'})">Benefits</a></li>
+                <li><a onclick="document.getElementById('revenue').scrollIntoView({behavior: 'smooth'})">Revenue Model</a></li>
+                <li><a onclick="document.getElementById('apps').scrollIntoView({behavior: 'smooth'})">Applications</a></li>
+                <li><a onclick="document.getElementById('roadmap').scrollIntoView({behavior: 'smooth'})">Roadmap</a></li>
+                <li><a onclick="document.getElementById('financial').scrollIntoView({behavior: 'smooth'})">Financials</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="vision">
+                <h2>Our Vision & Mission</h2>
+                
+                <div class="vision-statement">
+                    "To build the leading International grassroot community organizations, Foundation and Corporations that champion Africa's Socio-Education Awakening, Socio-Economic Empowerment, and Socio-Financial Literacy - building the Africa Wealth Bank for all Africans"
+                </div>
+
+                <h3>Founded in 2021 - Born from AUFFI 2019</h3>
+                <p><strong>TAU Africa International Foundation was born from the oracular AUFFI of 2019.</strong> AUFFI and TAU Foundation together form the spiritual and practical foundation for Africa's transformation. The organization was established with a singular purpose: to transform Africa's economic landscape through innovative digital financial technology and community empowerment.</p>
+                
+                <div class="highlight-box">
+                    <h3>Founding Leadership Team</h3>
+                    <div style="margin-top: 20px;">
+                        <h4 style="color: white;">Founder, CEO & Visioner</h4>
+                        <p style="font-size: 1.1em; margin-bottom: 20px;">📌 <strong>Magero Asa Rateng</strong> - Tau vision carrier and founder who received the directive from Akoth, based on the Book of Oloo to establish TAU Africa Foundation for Oloo Awakening & Empowerment</p>
+                        
+                        <h4 style="color: white;">Co-Founders (Vision Stabilizers)</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                            <div>📌 <strong>Choli Mwene Mabira</strong><br/>Project Director, co-founder</div>
+                            <div>📌 <strong>Ochieng Orudi Ayuak</strong><br/>Public Relations, co-founder</div>
+                        </div>
+                        <p style="font-size: 0.95em; font-style: italic;">Co-founders who help stabilize the vision and ensure vision alignment and organizational coherence</p>
+                        
+                        <h4 style="color: white; margin-top: 25px;">Founding Partners - Valenta & Project Development</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
+                            <div>📌 <strong>Martha Kimanzi</strong><br/><em>Diaspora & Hospitality</em></div>
+                            <div>📌 <strong>Lorna Mugambi</strong><br/><em>Architect & county Planner</em></div>
+                            <div>📌 <strong>Peter Mwangi</strong><br/><em>High Court Advocate & Certified Public Accountant</em></div>
+                            <div>📌 <strong>Karaya Nderitu</strong><br/><em>Finance, Law & Banking, corporate structure</em></div>
+                            <div>📌 <strong>Allan Sikuku</strong><br/><em>Business Administration, Entrepreneurship & Community Development</em></div>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.95em; font-style: italic;">Founding partners in Valenta and peripheral projects, helping establish the TALK Project phases</p>
+                    </div>
+                </div>
+
+                <div class="value-card" style="margin-top: 25px; border-left-color: #FFD700;">
+                    <h4>🌟 Currently Onboarding New Members</h4>
+                    <p>TAU Foundation is actively onboarding new members of any category for building the internal operations and external partnerships for the Grand Plan 2026. Whether you seek to join as:</p>
+                    <ul>
+                        <li><strong>TASK Members</strong> - Workers and engine builders</li>
+                        <li><strong>TALK Members</strong> - Supporters and fuel providers</li>
+                        <li><strong>Partners</strong> - Independent, corporate, foundation, or institutional</li>
+                        <li><strong>Workers</strong> - Operational team members</li>
+                        <li><strong>Investors</strong> - Financial partners in the vision</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: 600;">Join us in building Africa's economic future. Registration is open now through the TAU Main Application.</p>
+                </div>
+                
+                <p style="margin-top: 25px;">Having been registered in 2021, TAU began the establishment of <strong>TACEP Technical Training NITA Centre in Nairobi</strong>, conducting successful pilot test phases from 2023-2024. In 2025, TAU registered <strong>Valenta Holdings Company</strong> for member business projects, now establishing Kabiru for economic strongholds within our community to empower our society and Africa in general.</p>
+
+                <div class="highlight-box">
+                    <h3>The Vision Carrier: Magero Asa Rateng and the Formidable Team</h3>
+                    <p>Hotep Rising Africa's Strength <strong>Magero Asa Rateng</strong> as the vision carrier, working alongside a formidable team with an unrelenting quest for spiritual freedom and an economically independent Africa. Magero and this dedicated team are building the blueprint of the New Africa Economic and Social ecosystems to resettle Africa.</p>
+                    
+                    <p>The vision directive, motivation, and inspiration come from the <strong>Past struggles, Akoth and the Holy Book of Oloo</strong>, which unites all Africans from one single family tree and reinserts them back onto their earlier sockets. As the covenant scrolls of the blackman, this Book of Oloo (Sulwe) works on the vision of Akoth (custodian) to create Kikongo - the future pilgrimage home of all black souls.</p>
+                    
+                    <p><strong>Great honor to Yie Kuom Chier mission</strong> for the staggering custodianship of the holy grail of the blackman. A fresh call to work together and focus on rebuilding Africa by Africans is now the greatest call and necessity.</p>
+                </div>
+
+                <h3>TAU: Dual Meaning and Purpose</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>TAU - Traditional Meaning</h4>
+                        <p><strong>TAU Africa Foundation:</strong> The foundation for Africa's economic awakening and community empowerment</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>TAU - Team Akoth University | Team Africa Unity</h4>
+                        <p>In honor of the vision of Sulwe from Akoth, her vision of a University setup that will begin establishing and running the untiy and development systems and programs, as well as the bitter struggls of our freedom fighters who pushed us to the second and subsequentlythe third liberation. Ours is to create the roads and pathways that lead to the destination -Spiritual, Social, Economic Freedom. <strong>Hotep.</strong></p>
+                    </div>
+                </div>
+
+                <h3>Mission Statement</h3>
+                <p>To establish systems and programs that will eradicate poverty and ignorance, change the conditions of Africa's economic inequality and disability, that is founded on Trusted sustainable financial literacy systems across the continent through the revolutionary Kabiru digital currency ecosystem.</p>
+
+                <div class="highlight-box">
+                    <h3>The Grand Vision: Africa Wealth Bank</h3>
+                    <p>When fully established, the TAU ecosystem will function to create and sustain the Africa's decentralized wealth bank - a sovereign financial system owned by and for Africans. Through collective participation, value creation, and community engagement, we're building a financial infrastructure that:</p>
+                    <ul>
+                        <li>Empowers every African with access to wealth creation tools</li>
+                        <li>Creates sustainable income streams for participants</li>
+                        <li>Protects communities during economic inflation and recession</li>
+                        <li>Establishes Africa's independence from traditional fiat currency systems</li>
+                        <li>Distributes wealth equitably across the continent</li>
+                        <li>Provides education, economic empowerment, and research facilities</li>
+                        <li>Creates a collective community support system for Africa's development</li>
+                    </ul>
+                </div>
+
+                <h3>Strategic Objectives</h3>
+                <ol>
+                    <li>Establish formal legal structures and constitutional frameworks</li>
+                    <li>Build comprehensive digital infrastructure with AI-powered applications</li>
+                    <li>Create strong leadership at every organizational level</li>
+                    <li>Build robust TASK & TALK membership base</li>
+                    <li>Establish user accounts and Kabiru iToken points system</li>
+                    <li>Launch education, economic, and research project activities</li>
+                    <li>Create strategic partnerships for project completion</li>
+                    <li>Build strong value and liquid pools for Kabiru ecosystem</li>
+                    <li>Implement community support integration programs</li>
+                </ol>
+            </section>
+
+            <section id="auffi">
+                <h2>AUFFI - Africa Unity Freedom Fund Initiative - formally (Africa Unity Forum Foundation Initiative)</h2>
+                
+                <p style="font-size: 1.2em; color: #5a67d8; font-weight: 600; margin-bottom: 25px;">The spiritual and social empowerment vehicle for Africa's awakening</p>
+
+                <h3>What is AUFFI?</h3>
+                <p>AUFFI (Africa Unity Freedom Fund Initiative) is TAU Africa Foundation's grassroots movement specifically dealing with Africa's mental, social, and spiritual empowerment. AUFFI operates as the awakening system that unites Africans at the grassroots level while nurturing the rebirth of Oloo Civilization through the Galaxy Restoration System.</p>
+
+                <div class="highlight-box">
+                    <h3>AUFFI's Dual Mission</h3>
+                    <div style="display: grid; gap: 25px; margin-top: 20px;">
+                        <div>
+                            <h4 style="color: white;">A. Africa Unity at Grassroot Level (Awakening Systems)</h4>
+                            <p>AUFFI serves as our Unity vehicle, currently operational in many African countries in galaxy formulas. It focuses on:</p>
+                            <ul>
+                                <li>Mental liberation from colonial mindsets and economic dependency</li>
+                                <li>Social empowerment through community organizing and collective action</li>
+                                <li>Spiritual reconnection with ancestral wisdom and African values</li>
+                                <li>Grassroots mobilization for economic independence</li>
+                                <li>Cultural preservation and restoration</li>
+                                <li>Pan-African consciousness development</li>
+                                <li>Creation of inter generational conclave to solve the kikongo puzzle </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: white;">B. Kikongo - The Pilgrimage Home of Oloo(Africans)</h4>
+                            <p>Kikongo represents where ancient African civilization shall rise again. AUFFI is creating the Galaxy Restoration System to enable Oloo Civilization to rekindle in Kikongo:</p>
+                            <ul>
+                                <li>Establishing Kikongo as the spiritual and physical home for all Africans based on the R4 Agenda</li>
+                                <li>Creating new cities designed with African values, inventions and innovation</li>
+                                <li>Developing recreation and cultural resource centers that reflect Africa's originality</li>
+                                <li>Building infrastructure for best home quality of life</li>
+                                <li>Restoring Africa to its original glory and potential-sovereign race</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>The Galaxy Restoration System</h3>
+                <p>AUFFI's innovative framework for rekindling Oloo Civilization encompasses:</p>
+                
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>🌍 Physical Restoration(Economic Repatriation)</h4>
+                        <ul>
+                            <li>Urban planning for new African cities in Kikongo</li>
+                            <li>Infrastructure development with African aesthetics</li>
+                            <li>Agricultural and food security systems</li>
+                            <li>Environmental conservation projects</li>
+                            <li>Sustainable energy solutions</li>
+                            </li>Creation of Africa Wealth Bank </li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🧠 Mental Restoration(Social Resurrection)</h4>
+                        <ul>
+                            <li>Decolonization education programs</li>
+                            <li>African history and heritage teaching</li>
+                            <li>Critical thinking development</li>
+                            <li>Leadership training from African perspectives</li>
+                            <li>Innovation and creativity cultivation</li>
+                            <li>Creation of a centralised-decentralized qualified Social resource centres>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>✨ Socio-Spiritual Restoration</h4>
+                        <ul>
+                            <li>Ancestral wisdom preservation</li>
+                            <li>Sacred site restoration and protection</li>
+                            <li>Spiritual practices and ceremonies</li>
+                            <li>Connection to the Book of Oloo teachings</li>
+                            <li>Community spiritual gatherings</li>
+                            <li>Creation of a centralised-decentralized qualified Spiritual centres</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🤝 Socio-Community Restoration</h4>
+                        <ul>
+                            <li>Community cohesion building</li>
+                            <li>Traditional governance structures</li>
+                            <li>Family and kinship strengthening</li>
+                            <li>Youth empowerment programs</li>
+                            <li>Elder wisdom integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>AUFFI's Continental Presence</h3>
+                <p>AUFFI is already operational in numerous African countries, serving as the primary Unity vehicle for:</p>
+                <ul>
+                    <li>Organizing grassroots awakening movements</li>
+                    <li>Establishing local chapters and community hubs</li>
+                    <li>Conducting cultural restoration workshops</li>
+                    <li>Facilitating Pan-African dialogue and cooperation</li>
+                    <li>Preparing communities for the Kikongo pilgrimage</li>
+                    <li>Building networks of conscious African leaders</li>
+                </ul>
+
+                <h3>Access AUFFI</h3>
+                <p>AUFFI can be accessed through:</p>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Via TAU Main System</h4>
+                        <p>Register through the TAU Africa Foundation app's Par Sirai division for AUFFI programs and cultural learning centers</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Via Utility Apps</h4>
+                        <p>Access AUFFI-specific applications through the TAU Utility Apps Grid for targeted programs and services</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>AUFFI Trust Account</h3>
+                    <p>AUFFI operates a dedicated Trust Account to:</p>
+                    <ul>
+                        <li>Fund grassroots awakening initiatives</li>
+                        <li>Support community restoration projects</li>
+                        <li>Provide seed capital for SMEs in awakening communities</li>
+                        <li>Finance cultural preservation activities</li>
+                        <li>Invest in Kikongo infrastructure development</li>
+                        <li>Support repatriation and resettlement programs</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>The AUFFI Trust is funded through:</strong> Allocations from TAU revenue, dedicated contributions from members, partnership grants, and community fundraising initiatives.</p>
+                </div>
+
+                <h3>Oloo Civilization: Opening Africa for Innovation</h3>
+                <p>Through AUFFI's Galaxy Restoration System, the Oloo Civilization will:</p>
+                <ul>
+                    <li><strong>Create New Cities:</strong> Urban centers designed with African wisdom and modern innovation</li>
+                    <li><strong>Foster Invention and Innovation:</strong> Technology and creativity rooted in African values</li>
+                    <li><strong>Establish Recreation:</strong> Cultural and entertainment spaces celebrating African heritage</li>
+                    <li><strong>Return to Originality:</strong> Authentic African lifestyles and governance systems</li>
+                    <li><strong>Ensure Quality:</strong> High standards of living, education, and healthcare</li>
+                    <li><strong>Build Legacy:</strong> Sustainable systems for future generations</li>
+                </ul>
+            </section>
+
+            <section id="valenta">
+                <h2>Valenta Holdings Ltd - Value Enter Africa</h2>
+                
+                <p style="font-size: 1.2em; color: #5a67d8; font-weight: 600; margin-bottom: 25px;">TAU Africa's Economic Powerhouse and Corporate Vehicle</p>
+
+                <h3>What is Valenta?</h3>
+                <p><strong>Valenta Holdings Company Limited</strong> is a registered holding company under TAU Africa Foundation, established to be the primary economic vehicle for building the Kabiru digital product and housing TAU's diverse corporate business subsidiaries. Valenta brings together economic vehicles that can ferry SMEs, business projects, innovative potentials, and organizational business programs.</p>
+
+                <div class="highlight-box">
+                    <h3>Valenta Leadership & Founding Team</h3>
+                    <p><strong>Founded and Directed by:</strong></p>
+                    
+                    <div style="margin-top: 20px;">
+                        <h4 style="color: white;">Founder & CEO</h4>
+                        <p style="font-size: 1.05em; margin-bottom: 20px;">📌 <strong>Magero Asa Rateng</strong> - Gen Secretary, Director</p>
+                        
+                        <h4 style="color: white;">Co-Founders & Directors</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                            <div>📌 <strong>Choli Mwene Mabira</strong><br/>Co founder, Project startups Director</div>
+                            <div>📌 <strong>Orudi Ayuak</strong><br/>Co founder, Public Relations Director</div>
+                        </div>
+                        
+                        <h4 style="color: white;">Founding Partners & Board Directors</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
+                            <div>📌 <strong>Martha Kimanzi</strong><br/><em>Diaspora & Hospitality</em></div>
+                            <div>📌 <strong>Lorna Mugambi</strong><br/><em>Architect & County Planner</em></div>
+                            <div>📌 <strong>Peter Mwangi</strong><br/><em>Hight Court Advocate & CPA</em></div>
+                            <div>📌 <strong>Karaya Nderitu</strong><br/><em>Finance, Law & Banking, Corporate director</em></div>
+                            <div>📌 <strong>Allan Sikuku</strong><br/><em> bachelor degree, Business Administration & Entrepreneurship, CommunityDevelopment</em></div>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 20px;">This founding team serves as the core leadership for Kabiru development and TAU's economic projects, bringing together diverse expertise in technology, business, finance, and community development.</p>
+                </div>
+
+                <h3>Valenta's Primary Functions</h3>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>🏗️ Kabiru Development Hub</h4>
+                        <p><strong>Building the Digital Product for Africa's Sovereign Wealth:</strong></p>
+                        <ul>
+                            <li>Kabiru FinTech digital product development and refinement</li>
+                            <li>Blockchain infrastructure and decentralized servers management</li>
+                            <li>Mining mechanism optimization</li>
+                            <li>Wallet and transaction systems</li>
+                            <li>Security and compliance protocols</li>
+                            <li>Value validation algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🏢 Holding Company Structure</h4>
+                        <p><strong>Corporate Organization:</strong></p>
+                        <ul>
+                            <li>Parent company for other business subsidiaries</li>
+                            <li>Strategic business planning and oversight</li>
+                            <li>Resource allocation and management</li>
+                            <li>Inter-company coordination</li>
+                            <li>Shared services and infrastructure</li>
+                            <li>Corporate governance and compliance</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🚀 SME Ferry Platform</h4>
+                        <p><strong>Supporting Small & Medium Enterprises:</strong></p>
+                        <ul>
+                            <li>Business incubation programs</li>
+                            <li>Access to capital and resources</li>
+                            <li>Mentorship and training</li>
+                            <li>Market access facilitation</li>
+                            <li>Technology infrastructure provision</li>
+                            <li>Collaborative business opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>💼 Partnership Gateway</h4>
+                        <p><strong>Business Partnership Portal:</strong></p>
+                        <ul>
+                            <li>Corporate partnership registration via main app</li>
+                            <li>Due diligence and vetting processes</li>
+                            <li>Partnership agreements and contracts</li>
+                            <li>Collaborative project management</li>
+                            <li>Revenue sharing frameworks</li>
+                            <li>Joint venture facilitation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>How Partners Engage with Valenta</h3>
+                <p>All TAU partners seeking business dealings must register through Valenta via the TAU Main Application:</p>
+                <ol>
+                    <li><strong>Initial Registration:</strong> Partners register through TAU Main App selecting "Partner Registration"</li>
+                    <li><strong>Valenta Onboarding:</strong> Complete Valenta-specific business requirements and documentation</li>
+                    <li><strong>Partnership Type Selection:</strong> Choose from independent, cooperative, foundation, or institutional partnerships</li>
+                    <li><strong>Due Diligence Process:</strong> Valenta conducts thorough vetting (24-72 hours)</li>
+                    <li><strong>Partnership Activation:</strong> Upon approval, partners gain access to Valenta ecosystem</li>
+                    <li><strong>Ongoing Collaboration:</strong> Access to projects, resources, and earning opportunities</li>
+                </ol>
+
+                <h3>Valenta's Economic Vehicles</h3>
+                <p>As the first holding company within TAU Foundation, Valenta runs comprehensive economic setups including:</p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Business Project Development</h4>
+                        <p>Identifying, planning, and executing profitable business ventures that create value for the community</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Innovation Incubation</h4>
+                        <p>Nurturing innovative ideas and transforming them into viable commercial enterprises</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Organizational Programs</h4>
+                        <p>Structured business training, development programs, and capacity building initiatives</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Subsidiary Management</h4>
+                        <p>Overseeing multiple business subsidiaries across various sectors and industries</p>
+                    </div>
+                </div>
+
+                <h3>Valenta's Subsidiary Companies</h3>
+                <p>Current and planned subsidiaries under Valenta Holdings include:</p>
+                <ul>
+                    <li><strong>Kabiru Technologies Ltd:</strong> Digital currency development and blockchain services</li>
+                    <li><strong>TAU Global Trading:</strong> International commerce and marketplace operations</li>
+                    <li><strong>TACEP Training Institute:</strong> Technical education and certification programs</li>
+                    <li><strong>Community Development Corp:</strong> Social impact projects and community initiatives</li>
+                    <li><strong>Agricultural Ventures:</strong> Food security and sustainable farming projects</li>
+                    <li><strong>Technology Solutions:</strong> Software development and IT services</li>
+                    <li><strong>Industrial Innovations Ltd:</strong> Manufacturing and industrial projects</li>
+                    <li><strong>Reach out Ema Agency:</strong> General Supplies for industrial safety, uniform and promotional products</li>
+                    <li><strong>Natural Health products </stong> Homeopathic and other natural health products </li>
+                    <li><strong>Legal profession and Law Firms</strong> Legal professions and associates </li>
+                </ul>
+                </ul>
+                </ul>
+                </ul>
+
+                <h3>Direct Kabiru Earnings through Valenta</h3>
+                <div class="highlight-box">
+                    <h3>Valenta Wing Opportunities</h3>
+                    <p>Members and partners can earn <strong>real Kabiru (iKb)</strong> directly through Valenta's corporate activities:</p>
+                    <ul>
+                        <li>Facilitating corporate business profits</li>
+                        <li>Partnership arrangement facilitation</li>
+                        <li>Subsidiary business participation</li>
+                        <li>Corporate service contracts</li>
+                        <li>B2B transaction commissions</li>
+                        <li>Investment returns from Valenta projects</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><em>Valenta represents the fastest path to substantial Kabiru accumulation through corporate-level earnings.</em></p>
+                </div>
+
+                <h3>Registration & Corporate Structure</h3>
+                <p><strong>Company Registration:</strong> Valenta Holdings Company Limited is officially registered in Kenya, operating under full legal compliance with corporate governance standards.</p>
+                <p><strong>Relationship to TAU:</strong> While Valenta is a registered independent company, it operates as an integral part of the TAU Africa ecosystem, aligned with TAU's vision and mission while maintaining corporate autonomy for business operations.</p>
+            </section>
+
+            <section id="parsirai">
+                <h2>Par Sirai CLC - Cultural & Learning Center</h2>
+                
+                <p style="font-size: 1.2em; color: #5a67d8; font-weight: 600; margin-bottom: 25px;">Our Spiritual Home and Nairobi Headquarters</p>
+
+                <h3>What is Par Sirai?</h3>
+                <p><strong>Par Sirai</strong> serves as TAU Africa's spiritual home of Oloo in Nairobi, Kenya. It is the sacred landing point for all Africans seeking repatriation, visiting, or returning to Kikongo. Par Sirai operates as both a Cultural Learning Center (CLC) and the primary Nairobi headquarters for TAU's spiritual and practical operations.</p>
+
+                <div class="highlight-box">
+                    <h3>Par Sirai's Sacred Mission</h3>
+                    <p>As the spiritual home of Oloo in Kenya's capital, Par Sirai serves as:</p>
+                    <ul>
+                        <li>The gateway for all repatriation journeys to Kikongo</li>
+                        <li>A center for spiritual nourishment from ancestral blessings</li>
+                        <li>The custodian of the Book of Oloo (African covenant)</li>
+                        <li>A hub for understanding and living the spiritual life of Oloo</li>
+                        <li>An incubator for industrial innovations under TAU and Valenta</li>
+                    </ul>
+                </div>
+
+                <h3>The Four Pillars of Par Sirai</h3>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>📖 The Book of Oloo</h4>
+                        <p><strong>The African Covenant</strong></p>
+                        <p>Par Sirai houses and teaches from the anticipated Book of Oloo - the covenant scrolls of the blackman. This sacred text:</p>
+                        <ul>
+                            <li>Unites all Africans from one family tree</li>
+                            <li>Provides spiritual guidance and direction</li>
+                            <li>Contains the vision of Akoth for Kikongo</li>
+                            <li>Serves as the foundation for African restoration</li>
+                            <li>Guides the Galaxy Restoration System</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>✨ Spiritual Nourishment</h4>
+                        <p><strong>Ancestral Blessings & Connection</strong></p>
+                        <p>Par Sirai provides:</p>
+                        <ul>
+                            <li>Spiritual ceremonies and rituals</li>
+                            <li>Ancestral communion practices</li>
+                            <li>Guidance from elders and spiritual leaders</li>
+                            <li>Meditation and reflection spaces</li>
+                            <li>Sacred healing practices</li>
+                            <li>Community spiritual gatherings</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🌱 Spiritual Life of Oloo</h4>
+                        <p><strong>Living the Way</strong></p>
+                        <p>Par Sirai teaches and facilitates:</p>
+                        <ul>
+                            <li>Daily spiritual practices of Oloo</li>
+                            <li>Ethical living according to covenant</li>
+                            <li>Community harmony principles</li>
+                            <li>Relationship with nature and ancestors</li>
+                            <li>Personal spiritual development</li>
+                            <li>Leadership in spiritual consciousness</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>💡 Industrial Innovation Hub</h4>
+                        <p><strong>Practical Development</strong></p>
+                        <p>Par Sirai nurtures:</p>
+                        <ul>
+                            <li>Technology innovations under TAU</li>
+                            <li>Business ventures through Valenta and Corporate trainings</li>
+                            <li>Agricultural innovations</li>
+                            <li>Sustainable industry development</li>
+                            <li>African-centered design thinking</li>
+                            <li>Prototype development and testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Par Sirai Repatriation Services</h3>
+                <p>As the Nairobi headquarters and landing point, Par Sirai manages the complete repatriation journey:</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Step 1: Arrival at Par Sirai</h4>
+                        <p>All repatriating, visiting, or returning Africans first arrive at Par Sirai in Nairobi. The center provides:</p>
+                        <ul>
+                            <li>Welcome ceremonies and orientation</li>
+                            <li>Spiritual grounding and preparation</li>
+                            <li>Initial assessment and planning</li>
+                            <li>Temporary accommodation if needed</li>
+                            <li>Connection to the broader TAU network</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Step 2: Spiritual & Cultural Integration</h4>
+                        <p>Par Sirai facilitates deep reconnection:</p>
+                        <ul>
+                            <li>Teaching from the Book of Oloo</li>
+                            <li>Ancestral acknowledgment ceremonies</li>
+                            <li>Cultural immersion programs</li>
+                            <li>Language and tradition workshops</li>
+                            <li>Community integration activities</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Step 3: Practical Preparation</h4>
+                        <p>Comprehensive support for settlement:</p>
+                        <ul>
+                            <li>Economic orientation and opportunities</li>
+                            <li>Skills assessment and development</li>
+                            <li>Business establishment support</li>
+                            <li>Connection to TAU ecosystem (apps, services)</li>
+                            <li>Financial literacy and Kabiru onboarding</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Step 4: Journey to Kikongo</h4>
+                        <p>Facilitated transition to pilgrimage home:</p>
+                        <ul>
+                            <li>Travel arrangements and logistics</li>
+                            <li>Introduction to Kikongo communities</li>
+                            <li>Land and housing coordination</li>
+                            <li>Ongoing support network establishment</li>
+                            <li>Integration into AUFFI programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Step 5: Complete Repatriation</h4>
+                        <p>Ensuring successful settlement:</p>
+                        <ul>
+                            <li>Continued mentorship and guidance</li>
+                            <li>Economic opportunity facilitation</li>
+                            <li>Community leadership development</li>
+                            <li>Spiritual practice continuation</li>
+                            <li>Contribution to Oloo Civilization building</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Par Sirai Cultural & Learning Programs</h3>
+                <p>The Cultural Learning Center offers comprehensive educational programs:</p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Cultural Studies</h4>
+                        <ul>
+                            <li>African history and heritage</li>
+                            <li>Traditional practices and ceremonies</li>
+                            <li>Indigenous knowledge systems</li>
+                            <li>Art, music, and cultural expression</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Spiritual Education</h4>
+                        <ul>
+                            <li>Book of Oloo study groups</li>
+                            <li>Meditation and spiritual practices</li>
+                            <li>Ancestral veneration teachings</li>
+                            <li>Ethical and moral development</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Practical Skills</h4>
+                        <ul>
+                            <li>Agricultural techniques</li>
+                            <li>Traditional crafts and trades</li>
+                            <li>Sustainable living practices</li>
+                            <li>Community organization skills</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Modern Integration</h4>
+                        <ul>
+                            <li>Technology and digital literacy</li>
+                            <li>Business and entrepreneurship</li>
+                            <li>Financial literacy and Kabiru</li>
+                            <li>Leadership and governance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Accessing Par Sirai Services</h3>
+                <p>Par Sirai CLC can be accessed through:</p>
+                <ul>
+                    <li><strong>TAU Main App:</strong> Register in Par Sirai division for Cultural & Learning Centre programs</li>
+                    <li><strong>Physical Visit:</strong> Located in Njiru Estate, Nairobi Eastlands, Kenya (visit Tau main App and access par sirai)</li>
+                    <li><strong>AUFFI Programs:</strong> Integration with Africa Unity Freedom Fund initiatives</li>
+                    <li><strong>Repatriation Services:</strong> Contact TAU for journey to Kikongo facilitation</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Par Sirai: The Bridge to Kikongo</h3>
+                    <p style="font-size: 1.1em;">Par Sirai represents the essential bridge between the African diaspora and our ancestral home. It is where spiritual reconnection meets practical preparation, where ancient wisdom integrates with modern capability, and where the journey to Kikongo truly begins.</p>
+                    <p style="margin-top: 15px;"><strong>Whether you seek spiritual nourishment, cultural learning, repatriation support, or innovation opportunities - Par Sirai welcomes all children of Africa home.</strong></p>
+                </div>
+            </section>
+
+            <section id="kabiru">
+                <h2>Kabiru: Africa's Value-Based Digital Currency</h2>
+
+                <p style="font-size: 1.2em; color: #5a67d8; font-weight: 600;">The most unique FinTech digital value-based iToken for human value mining</p>
+
+                <h3>What is Kabiru?</h3>
+                <p>Kabiru (iKb) is not just another cryptocurrency - it's a revolutionary FinTech product inherent with African values, designed specifically to address Africa's economic challenges and opportunities.</p>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <span class="stat-number">1 iKb</span>
+                        <span class="stat-label">= 100,000 KSH</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1 iKbp</span>
+                        <span class="stat-label">= 1 KSH (Points)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Value Containers</span>
+                    </div>
+                </div>
+
+                <h3>Kabiru's Dual Nature: Double Portion System</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Real Kabiru (iKb)</h4>
+                        <p>The primary FinTech digital product mined directly through validating real-world values. This is the sovereign wealth currency with substantial monetary value (1 iKb = 100,000 KSH).</p>
+                        <p><strong>Earned Through:</strong></p>
+                        <ul>
+                            <li>Direct value validation and mining</li>
+                            <li>Valenta wing corporate partnerships</li>
+                            <li>Asset backing and wills</li>
+                            <li>Direct purchase from system</li>
+                            <li>Facilitating corporate business profits</li>
+                        </ul>
+                    </div>
+                    <div class="value-card">
+                        <h4>Kabiru Points (iKbp)</h4>
+                        <p>The accessible entry version allowing wider participation and equal access for all users (1 iKbp = 1 KSH). Building Kabiru away from real value for broader reach.</p>
+                        <p><strong>Earned Through:</strong></p>
+                        <ul>
+                            <li>Completing tasks on the network</li>
+                            <li>Marketing and referral programs</li>
+                            <li>Buying, selling, reviewing products</li>
+                            <li>Inputting verifiable values</li>
+                            <li>Community upgrade games</li>
+                            <li>Retrieving verified values</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Core Functions of Kabiru</h3>
+                <ol>
+                    <li><strong>Sovereign Wealth Currency:</strong> An independent store of value controlled by Africans for Africans</li>
+                    <li><strong>Medium of Exchange:</strong> Functions in place of traditional currency within the ecosystem and partner networks</li>
+                    <li><strong>Store of Value:</strong> Digital preservation of wealth with protection against inflation</li>
+                    <li><strong>Proof of Value Mining:</strong> Revolutionary mechanism that converts real-world value creation into digital assets</li>
+                </ol>
+
+                <h3>Where to Use Kabiru</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Peer-to-Peer (P2P)</h4>
+                        <p>Direct transactions between users within the network</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Kabiru Ecosystem</h4>
+                        <p>All TAU applications and services</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Partner Merchants</h4>
+                        <p>Growing network of accepting businesses</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Partner Legal Entities</h4>
+                        <p>Institutional partnerships and corporate transactions</p>
+                    </div>
+                </div>
+
+                <h3>The Proof of Value Mining Mechanism</h3>
+                <p>Unlike traditional cryptocurrencies that rely on computational power, Kabiru uses a unique <strong>Proof of Value (PoV)</strong> system:</p>
+                
+                <div class="highlight-box">
+                    <h3>8-Stage Value Mining Process</h3>
+                    <ol>
+                        <li><strong>Value Entry:</strong> Members input real-world values (work, services, products, activities) into the system through the main TAU app</li>
+                        <li><strong>Ledger Creation & Storage:</strong> System creates value-based ledger system using unique formula %A*+$B*=^C*, generating infinite containers to store data</li>
+                        <li><strong>Value Conversion:</strong> Hidden arithmetic dataset converts data into validated values, creating Kabiru points and preparing for mining</li>
+                        <li><strong>Validation of Asset Values:</strong> System validates authenticity using loyalty tags and pre-set standard valuation formulas</li>
+                        <li><strong>Value Relaying & Time Stamping:</strong> Verified values relay to blockchain with timestamps (immediate or slight delay based on network)</li>
+                        <li><strong>Real Mining Enabled:</strong> Users mine real Kabiru into wallets based on validated contributions</li>
+                        <li><strong>Kabiru Point System:</strong> System distributes Kabiru points from various network activities directly to user accounts</li>
+                        <li><strong>Comprehensive Accounting:</strong> Distributed ledgers create complete financial tracking and record keeping per user</li>
+                    </ol>
+                </div>
+
+                <h3>The Future of Kabiru</h3>
+                <ul>
+                    <li><strong>Widespread Adoption:</strong> Growing network of users and merchants across Africa</li>
+                    <li><strong>Real World Validation:</strong> Proven value system backed by tangible economic activity</li>
+                    <li><strong>Fiat Replacement:</strong> Gradually replace traditional currency in whole or part</li>
+                    <li><strong>Economic Protection:</strong> Save societies during inflation and recession</li>
+                    <li><strong>Digital Standard:</strong> Become the standard digital token of value surpassing other coins</li>
+                </ul>
+            </section>
+
+            <section id="ecosystem">
+                <h2>The Grand Apps Integration Infrastructure (GAIIA)</h2>
+                
+                <p style="font-size: 1.1em; margin-bottom: 30px;">TAU operates as an integrated digital ecosystem where five core applications work seamlessly together, creating a comprehensive financial, economic, and social platform for African empowerment.</p>
+
+                <h3>The Five Pillars of TAU Ecosystem</h3>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>🏛️ TAU Africa Foundation App</h4>
+                        <p><strong>Purpose:</strong> Main registration and onboarding hub</p>
+                        <p><strong>Functions:</strong></p>
+                        <ul>
+                            <li>Member registration (TASK & TALK)</li>
+                            <li>Value entry and creation points</li>
+                            <li>Community activities and training workshops</li>
+                            <li>Par Sirai Cultural & Learning Centre access</li>
+                            <li>Advanced AI navigation and support</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>⛏️ Kabiru Mining App</h4>
+                        <p><strong>Purpose:</strong> Digital currency mining platform</p>
+                        <p><strong>Functions:</strong></p>
+                        <ul>
+                            <li>Mine real Kabiru (iKb) tokens</li>
+                            <li>Collect Kabiru points from other apps</li>
+                            <li>Blockchain wallet configuration</li>
+                            <li>Send, receive, swap functions</li>
+                            <li>Trust Graph sovereign mining</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🛒 TAU Global Marketplace</h4>
+                        <p><strong>Purpose:</strong> E-commerce and marketing platform</p>
+                        <p><strong>Functions:</strong></p>
+                        <ul>
+                            <li>Buy and sell products/services</li>
+                            <li>Become a marketer with referral links</li>
+                            <li>Earn commissions and Kabiru points</li>
+                            <li>Advanced AI marketing tools</li>
+                            <li>Triple point distribution system</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>📊 TAU Accounting Database</h4>
+                        <p><strong>Purpose:</strong> Comprehensive financial management</p>
+                        <p><strong>Functions:</strong></p>
+                        <ul>
+                            <li>Income and expense tracking</li>
+                            <li>Automated financial statements</li>
+                            <li>Ledger logs and audit trails</li>
+                            <li>Email integration for reports</li>
+                            <li>Personal wealth system</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>💬 TAU Oloo Messenger</h4>
+                        <p><strong>Purpose:</strong> Dedicated communication platform</p>
+                        <p><strong>Functions:</strong></p>
+                        <ul>
+                            <li>Live chats and audiovisual calls</li>
+                            <li>Document and media sharing</li>
+                            <li>Groups and communities</li>
+                            <li>Leadership moderation tools</li>
+                            <li>Forum discussions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>TAU Utility Applications Grid</h3>
+                <p>Beyond the five core apps, TAU provides a growing library of utility-specific applications for various business, education, and project needs:</p>
+                
+                <div class="app-links">
+                    <a href="javascript:void(0)" onclick="alert('Please use the TAU Global Marketplace to access this utility app'); window.open('https://magero1985.github.io/Tau-marketing-App/', '_blank')" class="app-link">
+                        <h4>🎓 TACEP Education App</h4>
+                        <p>Click to visit utility</p>
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="alert('Please use the TAU Global Marketplace to access this utility app'); window.open('https://magero1985.github.io/Tau-marketing-App/', '_blank')" class="app-link">
+                        <h4>🚨 Reach Out EMA Agency</h4>
+                        <p>Click to visit utility</p>
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="alert('Please use the TAU Global Marketplace to access this utility app'); window.open('https://magero1985.github.io/Tau-marketing-App/', '_blank')" class="app-link">
+                        <h4>📦 General Supplies App</h4>
+                        <p>Click to visit utility</p>
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="alert('Please use the TAU Global Marketplace to access this utility app'); window.open('https://magero1985.github.io/Tau-marketing-App/', '_blank')" class="app-link">
+                        <h4>🌿 Ayuka Yamo Health App</h4>
+                        <p>Click to visit utility</p>
+                    </a>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px; font-style: italic;">More utility apps uploaded constantly. Access all utilities through the TAU Global Marketplace.</p>
+
+                <div class="highlight-box">
+                    <h3>How the Integrated System Works</h3>
+                    <p><strong>Stage 1 - Integration:</strong> All apps synchronize seamlessly, functioning as one smooth loop. Account syncing across all applications with real-time notifications.</p>
+                    
+                    <p><strong>Stage 2 - Value Processing:</strong> System converts user inputs into validated values using proprietary algorithms, creating infinite storage containers.</p>
+                    
+                    <p><strong>Stage 3 - Mining Activation:</strong> Validated values trigger mining opportunities, enabling users to earn both real Kabiru and Kabiru points.</p>
+                    
+                    <p><strong>Stage 4 - Financial Tracking:</strong> Distributed accounting system automatically tracks all transactions and value creation.</p>
+                    
+                    <p><strong>Stage 5 - Community Communication:</strong> Internal messaging enables users to connect, share experiences, and receive support.</p>
+                </div>
+            </section>
+
+            <section id="benefits">
+                <h2>Member Benefits & Value Proposition</h2>
+
+                <h3>Why Join TAU Africa Foundation?</h3>
+                <p style="font-size: 1.1em; margin-bottom: 25px;">TAU offers unprecedented opportunities for wealth creation, financial literacy, and economic empowerment. Every participant benefits from multiple income streams and value creation pathways.</p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="benefit-icon">👥</div>
+                        <h4>As a Member (TASK & TALK)</h4>
+                        <ul>
+                            <li>Official TAU membership card</li>
+                            <li>Access to all five core applications</li>
+                            <li>Kabiru mining rights (mining code)</li>
+                            <li>Free financial literacy training</li>
+                            <li>Community support integration</li>
+                            <li>Priority access to new features</li>
+                            <li>Voting rights on community decisions</li>
+                            <li>Educational workshop participation</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="benefit-icon">💰</div>
+                        <h4>As a Miner</h4>
+                        <ul>
+                            <li>Mine real Kabiru (iKb) through value validation</li>
+                            <li>Earn Kabiru points (iKbp) from daily activities</li>
+                            <li>Double earning opportunity (points + cash)</li>
+                            <li>Sovereign mining through Trust Graph</li>
+                            <li>Asset-backed wealth creation</li>
+                            <li>Protection against inflation</li>
+                            <li>Digital wealth accumulation</li>
+                            <li>Multiple value entry pathways</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="benefit-icon">🔗</div>
+                        <h4>As a Marketer</h4>
+                        <ul>
+                            <li>Earn through referral program links</li>
+                            <li>Receive percentage share of sales in cash</li>
+                            <li>Build passive income streams</li>
+                            <li>Access to marketing tools and AI support</li>
+                            <li>Commission from network transactions</li>
+                            <li>Kabiru points for every successful referral</li>
+                            <li>Scalable income potential</li>
+                            <li>Work from anywhere flexibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="benefit-icon">💼</div>
+                        <h4>As a System Worker</h4>
+                        <ul>
+                            <li>Steady employment within the ecosystem</li>
+                            <li>Payment in Kabiru and fiat currency</li>
+                            <li>Job training workshops and skill development</li>
+                            <li>Career advancement opportunities</li>
+                            <li>Community impact and purpose-driven work</li>
+                            <li>Healthcare and benefits packages</li>
+                            <li>Performance bonuses in Kabiru</li>
+                            <li>Leadership development programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="benefit-icon">🏪</div>
+                        <h4>As a Buyer/Seller</h4>
+                        <ul>
+                            <li>Access to diverse marketplace products</li>
+                            <li>Earn Kabiru points with every transaction</li>
+                            <li>Lower fees than traditional platforms</li>
+                            <li>Secure transaction environment</li>
+                            <li>Marketing support for sellers</li>
+                            <li>Community-driven commerce</li>
+                            <li>Product reviews earn points</li>
+                            <li>Growing customer base</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="benefit-icon">🤝</div>
+                        <h4>As a Partner</h4>
+                        <ul>
+                            <li>Direct Kabiru earning opportunities</li>
+                            <li>Corporate business profit facilitation</li>
+                            <li>Strategic partnership arrangements</li>
+                            <li>Access to TAU user network</li>
+                            <li>Brand visibility and marketing support</li>
+                            <li>Technology integration assistance</li>
+                            <li>Revenue sharing models</li>
+                            <li>Co-development opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>The Five Steps to Economic Freedom</h3>
+                    <ol>
+                        <li><strong>Register in TAU Africa Foundation App:</strong> Complete onboarding, obtain membership card and TASK/TALK status</li>
+                        <li><strong>Register in Kabiru Mining App:</strong> Obtain Kabiru mining rights and mining code</li>
+                        <li><strong>Register in Global Marketplace:</strong> Get participation rights for buying, selling, or marketing</li>
+                        <li><strong>Register in Oloo Messenger:</strong> Obtain chat service tag and communication access</li>
+                        <li><strong>Start Creating Value:</strong> Begin your journey to economic freedom through any pathway that suits you</li>
+                    </ol>
+                </div>
+
+                <h3>Community Support & Development Benefits</h3>
+                <p>All members contribute to and benefit from TAU's community development initiatives:</p>
+                <ul>
+                    <li><strong>Community Agriculture:</strong> Food security and agricultural projects</li>
+                    <li><strong>Climate Dialogue:</strong> Environmental sustainability initiatives</li>
+                    <li><strong>Peace & Safety:</strong> Waste management and security activities</li>
+                    <li><strong>Water & Sanitation:</strong> Clean water access projects</li>
+                    <li><strong>Community Education:</strong> Free or subsidized technical skills training</li>
+                    <li><strong>Child Care Initiatives:</strong> Support for children's development projects</li>
+                </ul>
+            </section>
+
+            <section id="revenue">
+                <h2>Revenue Model & Network Sustainability</h2>
+
+                <h3>How TAU Generates Sustainable Revenue</h3>
+                <p style="font-size: 1.1em; margin-bottom: 25px;">The TAU ecosystem is designed to be self-sustaining through multiple revenue streams. Commission-based earnings from user activities ensure the network has sufficient funds to maintain operations, pay workers, and continue development.</p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>💳 Transaction Commissions</h4>
+                        <p><strong>Marketplace Transactions:</strong></p>
+                        <ul>
+                            <li>Small percentage from each sale (system share)</li>
+                            <li>Distributed three ways: System, Link Commission, Seller</li>
+                            <li>Volume-based scaling ensures sustainability</li>
+                        </ul>
+                        <p><strong>Mining Operations:</strong></p>
+                        <ul>
+                            <li>Processing fees for value validation</li>
+                            <li>Network maintenance contributions</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🎯 Service Fees</h4>
+                        <ul>
+                            <li>Premium membership tiers with enhanced benefits</li>
+                            <li>Corporate partnership fees</li>
+                            <li>Training workshop registrations</li>
+                            <li>Advanced AI service usage</li>
+                            <li>Expedited verification services</li>
+                            <li>Business listing promotions</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>🏢 Valenta Holdings Revenue</h4>
+                        <ul>
+                            <li>Corporate business facilitation</li>
+                            <li>Institutional partnerships</li>
+                            <li>Kabiru direct sales (1 iKb = 100,000 KSH)</li>
+                            <li>B2B service contracts</li>
+                            <li>Research and consulting services</li>
+                            <li>Educational program licensing</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>📱 Application Ecosystem</h4>
+                        <ul>
+                            <li>Utility app marketplace commissions</li>
+                            <li>Third-party app integration fees</li>
+                            <li>Data analytics services (privacy-compliant)</li>
+                            <li>API access for developers</li>
+                            <li>Advertising revenue (ethical, community-approved)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Revenue Distribution & Worker Compensation</h3>
+                
+                <div class="highlight-box">
+                    <h3>Network Sustainability Model</h3>
+                    <p><strong>Revenue Allocation Structure:</strong></p>
+                    <ul>
+                        <li><strong>40% - Operations & Development:</strong> Platform maintenance, infrastructure, R&D</li>
+                        <li><strong>30% - Worker Compensation:</strong> Salaries, benefits, performance bonuses</li>
+                        <li><strong>15% - Community Development:</strong> Social programs, education, research facilities</li>
+                        <li><strong>10% - Reserve Fund:</strong> Economic stability, emergency response</li>
+                        <li><strong>5% - Founder & Leadership:</strong> Strategic direction, governance</li>
+                    </ul>
+                    
+                    <p style="margin-top: 20px;"><strong>Projected Monthly Revenue at Scale:</strong></p>
+                    <p>With 100,000 active users averaging $10/month in transaction commissions:</p>
+                    <ul>
+                        <li>Monthly Revenue: $1,000,000</li>
+                        <li>Worker Compensation Pool: $300,000</li>
+                        <li>Supporting 500+ full-time workers at competitive wages</li>
+                        <li>Sustainable operations with room for growth</li>
+                    </ul>
+                </div>
+
+                <h3>Value Pools: The Engine of Kabiru</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Data Value Pool</h4>
+                        <p>Accumulated from user value entries, service contributions, and economic activities. This pool validates and backs the Kabiru mining experience.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Liquid Pool</h4>
+                        <p>Built from fiat payments, direct Kabiru purchases, and partnership investments. Ensures Kabiru maintains real-world exchangeable value.</p>
+                    </div>
+                </div>
+
+                <h3>Economic Impact & ROI for Stakeholders</h3>
+                <ul>
+                    <li><strong>Users:</strong> Average 20-40% monthly returns on value creation activities</li>
+                    <li><strong>Miners:</strong> Compounding wealth through Kabiru accumulation</li>
+                    <li><strong>Marketers:</strong> Scalable income with 5-15% commission structures</li>
+                    <li><strong>Workers:</strong> Stable employment with performance bonuses</li>
+                    <li><strong>Partners:</strong> Mutual growth through revenue sharing (10-30% partnerships)</li>
+                    <li><strong>Investors:</strong> Expected 100-300% ROI within 3-5 years as network scales</li>
+                </ul>
+            </section>
+
+            <section id="apps">
+                <h2>Access the TAU Ecosystem Applications</h2>
+                
+                <p style="font-size: 1.1em; text-align: center; margin-bottom: 30px;">Begin your journey to economic freedom by accessing our integrated application suite. All apps work seamlessly together to provide a complete digital financial experience.</p>
+
+                <div class="app-links">
+                    <a href="https://magero1985.github.io/Tau-Africa/" class="app-link" target="_blank">
+                        <h4>🏛️ TAU Africa Foundation</h4>
+                        <p>Main registration & onboarding hub. Start your journey here!</p>
+                    </a>
+
+                    <a href="https://magero1985.github.io/Kabiru-Mining-Portal-/" class="app-link" target="_blank">
+                        <h4>⛏️ Kabiru Mining Portal</h4>
+                        <p>Mine digital currency through value creation</p>
+                    </a>
+
+                    <a href="https://magero1985.github.io/Tau-marketing-App/" class="app-link" target="_blank">
+                        <h4>🛒 TAU Global Marketplace</h4>
+                        <p>Buy, sell, and earn through marketing</p>
+                    </a>
+
+                    <a href="https://magero1985.github.io/Tau-Africa-Accounting/" class="app-link" target="_blank">
+                        <h4>📊 TAU Accounting Database</h4>
+                        <p>Manage your finances comprehensively</p>
+                    </a>
+
+                    <a href="https://magero1985.github.io/oloo_app/" class="app-link" target="_blank">
+                        <h4>💬 TAU Oloo Messenger</h4>
+                        <p>Connect with the community</p>
+                    </a>
+                </div>
+
+                <div class="cta-section">
+                    <h2 style="color: white; border: none; display: block; margin-bottom: 15px;">Ready to Join the Revolution?</h2>
+                    <p style="font-size: 1.2em;">Start your journey to economic freedom today. Register now and become part of Africa's financial awakening.</p>
+                    <a href="https://magero1985.github.io/Tau-Africa/" class="cta-button" target="_blank">Begin Registration Now</a>
+                </div>
+
+                <h3>Application Features Summary</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Advanced AI Integration</h4>
+                        <p>All apps feature intelligent AI assistance for navigation, questions, value documentation, and registration support.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Seamless Synchronization</h4>
+                        <p>Account syncing across all applications with real-time notifications and status updates.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Mobile-First Design</h4>
+                        <p>Optimized for smartphones, ensuring accessibility for all Africans regardless of device.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Security & Privacy</h4>
+                        <p>Bank-level encryption, KYC verification, and data protection protocols.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roadmap">
+                <h2>Implementation Roadmap 2026</h2>
+
+                <h3>Strategic Implementation Timeline</h3>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>SHORT TERM (Q1 2026 - Immediate Launch)</h4>
+                        <ul>
+                            <li><strong>Complete Documentation:</strong> Finalize blueprints, legal frameworks, and operational procedures</li>
+                            <li><strong>Digital Infrastructure:</strong> Launch all five core applications with full integration</li>
+                            <li><strong>Establish Par Sirai:</strong> Complete setup of Cultural & Learning Center headquarters in Nairobi</li>
+                            <li><strong>Valenta Activation:</strong> Formalize Valenta Holdings operations and subsidiary structure</li>
+                            <li><strong>AUFFI Launch:</strong> Activate Galaxy Restoration System and awakening programs</li>
+                            <li><strong>Leadership Formation:</strong> Assemble governance structures and management teams</li>
+                            <li><strong>Founding Members:</strong> Onboard initial 1,000 members (TASK & TALK)</li>
+                            <li><strong>Budget Acquisition:</strong> Secure USD $150,000 setup completion funding</li>
+                        </ul>
+                        <p><strong>Key Milestone:</strong> All systems operational, Par Sirai functional, AUFFI and Valenta active by March 2026</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>MID TERM (Q2-Q3 2026 - Expansion Phase)</h4>
+                        <ul>
+                            <li><strong>Membership Growth:</strong> Scale to 10,000+ active TASK & TALK members</li>
+                            <li><strong>Training Programs:</strong> Launch MBS Interweave short courses and financial literacy workshops</li>
+                            <li><strong>Ledger Systems:</strong> Create comprehensive personal and business ledgers for all members</li>
+                            <li><strong>Value Pool Establishment:</strong> Build substantial data value pool through member activities</li>
+                            <li><strong>Liquid Pool Growth:</strong> Accumulate fiat capital through sales and partnerships</li>
+                            <li><strong>Brand Development:</strong> Create strong promotional image and marketing campaigns</li>
+                            <li><strong>Beta Testing:</strong> Launch pilot phase with enclosed network (off-grid testing)</li>
+                            <li><strong>App Optimization:</strong> Full functionality testing and user feedback integration</li>
+                        </ul>
+                        <p><strong>Key Milestone:</strong> 10,000 users actively mining Kabiru by September 2026</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>LONG TERM (Q4 2026 - Q4 2027 - Full Scale Launch)</h4>
+                        <ul>
+                            <li><strong>Public Launch:</strong> Open mainnet launch for general African population</li>
+                            <li><strong>Partnership Network:</strong> Establish 100+ merchant and institutional partnerships</li>
+                            <li><strong>Community Projects:</strong> Launch education centers, research facilities, and economic programs</li>
+                            <li><strong>Geographic Expansion:</strong> Extend operations to 10+ African countries</li>
+                            <li><strong>Kabiru Exchange:</strong> Enable full fiat-to-Kabiru conversion services</li>
+                            <li><strong>Regulatory Compliance:</strong> Obtain necessary financial licenses and certifications</li>
+                            <li><strong>Valenta Holdings Growth:</strong> Expand corporate wing for institutional services</li>
+                            <li><strong>Africa Wealth Bank:</strong> Establish foundational infrastructure for continental wealth system</li>
+                        </ul>
+                        <p><strong>Key Milestone:</strong> 100,000+ users, full operational capacity, Africa Wealth Bank framework established</p>
+                    </div>
+                </div>
+
+                <h3>Critical Success Factors</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Technology Excellence</h4>
+                        <p>Robust, scalable infrastructure that handles millions of transactions with 99.9% uptime</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Community Trust</h4>
+                        <p>Transparent operations, consistent value delivery, and responsive support</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Strategic Partnerships</h4>
+                        <p>Collaborations with businesses, institutions, and governments</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Financial Sustainability</h4>
+                        <p>Positive cash flow within 6 months, profitability within 12 months</p>
+                    </div>
+                </div>
+
+                <h3>Risk Mitigation Strategies</h3>
+                <ul>
+                    <li><strong>Regulatory Risk:</strong> Proactive engagement with financial authorities, legal compliance framework</li>
+                    <li><strong>Technical Risk:</strong> Redundant systems, regular security audits, disaster recovery plans</li>
+                    <li><strong>Market Risk:</strong> Diversified revenue streams, flexible business model adaptation</li>
+                    <li><strong>Adoption Risk:</strong> Intensive education programs, user-friendly interfaces, community ambassadors</li>
+                </ul>
+            </section>
+
+            <section id="financial">
+                <h2>Financial Projections & Investment Requirements</h2>
+
+                <h3>Setup Completion Budget: USD $150,000</h3>
+                <p style="font-size: 1.1em; margin-bottom: 25px;">Initial capital required to complete infrastructure setup, establish AUFFI and Valenta operations, and launch full operational capacity including Par Sirai Cultural & Learning Center.</p>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Technology & Infrastructure</h4>
+                        <p><strong>$45,000 (30%)</strong></p>
+                        <ul>
+                            <li>Server infrastructure & cloud services: $17,000</li>
+                            <li>Application development & integration: $15,000</li>
+                            <li>Blockchain implementation: $8,000</li>
+                            <li>Security systems & encryption: $5,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Operations & Facilities</h4>
+                        <p><strong>$35,000 (23.3%)</strong></p>
+                        <ul>
+                            <li>Central office & Par Sirai establishment: $15,000</li>
+                            <li>Equipment & furniture: $8,000</li>
+                            <li>Communication systems: $5,000</li>
+                            <li>6-month operational reserves: $7,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Team & Human Resources</h4>
+                        <p><strong>$30,000 (20%)</strong></p>
+                        <ul>
+                            <li>Core team salaries (3 months): $18,000</li>
+                            <li>Training & development: $6,000</li>
+                            <li>Recruitment & onboarding: $6,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Legal & Compliance</h4>
+                        <p><strong>$12,000 (8%)</strong></p>
+                        <ul>
+                            <li>Legal documentation & registration: $6,000</li>
+                            <li>Financial licensing applications: $4,000</li>
+                            <li>Compliance consulting: $2,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>AUFFI Programs & Initiatives</h4>
+                        <p><strong>$13,000 (8.7%)</strong></p>
+                        <ul>
+                            <li>Galaxy Restoration System setup: $5,000</li>
+                            <li>Cultural programs establishment: $4,000</li>
+                            <li>Community awakening initiatives: $4,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>Marketing & Launch</h4>
+                        <p><strong>$8,000 (5.3%)</strong></p>
+                        <ul>
+                            <li>Brand development: $3,000</li>
+                            <li>Initial marketing campaigns: $3,500</li>
+                            <li>Launch events: $1,500</li>
+                        </ul>
+                    </div>
+
+                    <div class="value-card">
+                        <h4>AUFFI Trust Seed Capital</h4>
+                        <p><strong>$7,000 (4.7%)</strong></p>
+                        <ul>
+                            <li>SME seed funding pool: $4,000</li>
+                            <li>Community project grants: $2,000</li>
+                            <li>Emergency support fund: $1,000</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>AUFFI Trust Account Allocation</h3>
+                    <p>The dedicated $7,000 seed capital for the AUFFI Trust Account will:</p>
+                    <ul>
+                        <li>Provide initial funding for 10-15 community SMEs</li>
+                        <li>Support 3-5 immediate awakening initiatives</li>
+                        <li>Fund cultural restoration pilot projects</li>
+                        <li>Establish emergency support for vulnerable members</li>
+                        <li>Create revolving loan fund for entrepreneurs</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><em>This seed capital will grow through TAU revenue allocations, member contributions, and returns from funded SMEs.</em></p>
+                </div>
+
+                <h3>Revenue Projections (Years 1-3)</h3>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <span class="stat-number">Year 1</span>
+                        <span class="stat-label">$1.2M Revenue</span>
+                        <p style="margin-top: 10px; font-size: 0.9em;">10,000 active users</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">Year 2</span>
+                        <span class="stat-label">$6.5M Revenue</span>
+                        <p style="margin-top: 10px; font-size: 0.9em;">50,000 active users</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">Year 3</span>
+                        <span class="stat-label">$25M Revenue</span>
+                        <p style="margin-top: 10px; font-size: 0.9em;">200,000 active users</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Investment Return Scenarios</h3>
+                    
+                    <h4>Conservative Scenario (Year 3)</h4>
+                    <ul>
+                        <li>50,000 active users</li>
+                        <li>$3M annual revenue</li>
+                        <li>$900K annual profit (30% margin)</li>
+                        <li>900% ROI on initial $100K investment</li>
+                    </ul>
+
+                    <h4>Moderate Scenario (Year 3)</h4>
+                    <ul>
+                        <li>100,000 active users</li>
+                        <li>$12M annual revenue</li>
+                        <li>$4.8M annual profit (40% margin)</li>
+                        <li>4,800% ROI on initial investment</li>
+                    </ul>
+
+                    <h4>Optimistic Scenario (Year 3)</h4>
+                    <ul>
+                        <li>200,000+ active users</li>
+                        <li>$25M annual revenue</li>
+                        <li>$12.5M annual profit (50% margin)</li>
+                        <li>12,500% ROI on initial investment</li>
+                    </ul>
+                </div>
+
+                <h3>Funding Sources & Strategy</h3>
+                <ol>
+                    <li><strong>Founder Capital:</strong> Initial contribution from founding team</li>
+                    <li><strong>Angel Investors:</strong> High-net-worth individuals passionate about African development</li>
+                    <li><strong>Impact Investors:</strong> Organizations focused on social and economic impact</li>
+                    <li><strong>Strategic Partners:</strong> Corporate entities seeking African market presence</li>
+                    <li><strong>Community Crowdfunding:</strong> Small investments from early adopters and believers</li>
+                    <li><strong>Grant Funding:</strong> Development organizations and foundations</li>
+                </ol>
+
+                <h3>Path to Profitability</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Month 3</h4>
+                        <p>Break-even on operating expenses with 2,000 active users</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Month 6</h4>
+                        <p>Positive cash flow with 5,000 active users generating $50K monthly</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Month 12</h4>
+                        <p>Full profitability with 10,000+ users, $100K monthly profit</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Month 24</h4>
+                        <p>Sustainable growth phase, reinvesting 60% of profits into expansion</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="conclusion">
+                <h2>The Future We're Building Together</h2>
+
+                <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 25px;">TAU Africa Foundation represents more than just a digital currency project - it's a comprehensive economic revolution designed to empower every African with the tools, knowledge, and opportunities needed to achieve financial freedom.</p>
+
+                <h3>Why TAU Will Succeed</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>🎯 Solving Real Problems</h4>
+                        <p>Addressing Africa's economic inequality, lack of financial literacy, and limited access to wealth creation opportunities</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>💡 Innovative Technology</h4>
+                        <p>Unique Proof of Value mining mechanism that rewards real-world contributions, not just computational power</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>🌍 Community-First Approach</h4>
+                        <p>Built by Africans, for Africans, with community ownership and democratic governance</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>📈 Sustainable Economics</h4>
+                        <p>Multiple revenue streams ensure network sustainability and worker compensation</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>🤝 Strategic Partnerships</h4>
+                        <p>Growing ecosystem of merchants, institutions, and organizations</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>🎓 Education Focus</h4>
+                        <p>Comprehensive training programs ensuring members understand and benefit from the system</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>The Africa Wealth Bank Vision</h3>
+                    <p style="font-size: 1.1em; line-height: 1.8;">When fully established, TAU will operate as Africa's decentralized wealth bank - a financial system that:</p>
+                    <ul style="font-size: 1.05em;">
+                        <li>Serves every African, regardless of location or economic status</li>
+                        <li>Provides equal access to wealth creation and financial services</li>
+                        <li>Protects communities from economic crises and currency devaluation</li>
+                        <li>Funds education, healthcare, and infrastructure development</li>
+                        <li>Creates millions of jobs across the continent</li>
+                        <li>Establishes Africa's financial sovereignty and independence</li>
+                        <li>Distributes wealth equitably through community participation</li>
+                        <li>Preserves African values while embracing modern technology</li>
+                    </ul>
+                    <p style="font-size: 1.1em; margin-top: 20px; font-weight: 600;">This is not just a business - it's a movement to transform Africa's economic future.</p>
+                </div>
+
+                <h3>Join Us in Building Africa's Future</h3>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">Whether you're an individual seeking economic freedom, an investor looking for high-impact opportunities, a partner wanting to contribute to Africa's development, or a visionary who believes in our mission - there's a place for you in the TAU ecosystem.</p>
+
+                <div class="cta-section">
+                    <h2 style="color: white; border: none; display: block; margin-bottom: 15px;">Be Part of the Revolution</h2>
+                    <p style="font-size: 1.2em; margin-bottom: 25px;">The journey to Africa's economic awakening starts with a single step. Take that step today.</p>
+                    <a href="https://magero1985.github.io/Tau-Africa/" class="cta-button" target="_blank">Start Your Journey Now</a>
+                    <p style="margin-top: 25px; font-size: 1em;">Questions? Ready to partner? Contact the TAU Africa Foundation team through the main app.</p>
+                </div>
+
+                <div class="stats" style="margin-top: 40px;">
+                    <div class="stat-box">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Core Applications</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Wealth Creation Opportunities</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Africa United</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <h3 style="color: white; margin-bottom: 15px;">TAU Africa International Foundation</h3>
+            <p>Building Africa's Sovereign Wealth Through Kabiru value Digital Currency</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Founded 2021 | Strategic Blueprint 2026</p>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+                <h4 style="color: white; margin-bottom: 15px;">Contact Information</h4>
+                <p><strong>Registered Organization and Corporate Holding</strong></p>
+                <p>P.O. Box 9424-00200, Nairobi, Kenya</p>
+                <p>Email: <a href="mailto:grouptauafrica@gmail.com" style="color: #fff; text-decoration: underline;">grouptauafrica@gmail.com</a></p>
+                <p>Phone: +254 725 646 331 | +254 101 646 331</p>
+                <p>Website: <a href="http://www.tauafricagroup.co.ke" target="_blank" style="color: #fff; text-decoration: underline;">www.tauafricagroup.co.ke</a></p>
+            </div>
+            
+            <p style="margin-top: 30px; opacity: 0.8;">Together, we're creating the Africa Wealth Bank for all Africans</p>
+            <p style="margin-top: 10px; font-style: italic; opacity: 0.9;">Hotep.</p>
+        </footer>
+    </div>
+</body>
+</html>
