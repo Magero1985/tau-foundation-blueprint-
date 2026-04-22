@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="TAU Foundation Blueprint">
     <link rel="manifest" href="./manifest.json">
-    <title>TAU Africa Foundation - Sovereign Wealth Fund Blueprint 2025</title>
+    <title>TAU Africa Group - Africa Sovereign Wealth Build 2025</title>
     <style>
         * {
             margin: 0;
@@ -614,134 +614,17 @@
         <div class="welcome-box">
             <div class="welcome-logo">
                 <h1>🌍 KABIRU ECOSYSTEM FAMILYTREE</h1>
-                <p style="color: #FFD700; font-weight: 600;">Building Africa's Community Wealth</p>
+                <p style="color: #FFD700; font-weight: 600;">Building Africa's Community Wealth through digital value credits and legal declarations</p>
             </div>
 
             <div class="welcome-message">
                 <h2>Welcome, Great African child!</h2>
                 <p style="font-size: 1.05em; line-height: 1.6;">
-                    Welcome to your value management and wealth construction & maintenance portal. Build your wealth from here and expand with the system, dont forget to return back home to Africa. This platform works on your value addition, creation, and conversion for kabiru earnings.
+                    Welcome to your value management and wealth construction & maintenance portal. Build your wealth from kabiru digital credits and expand with the ecosystem, dont forget to join the ecosystem tree of life for real experiences. This platform works on your value addition, value creation, and conversion for kabiru earnings.
                 </p>
             </div>
 
-            <!-- NDA Section -->
-            <div class="agreement-section">
-                <h3>
-                    1. Non-Disclosure Agreement 
-                    <span class="required-mark">*Required</span>
-                    <span class="status-indicator status-pending" id="ndaStatus"></span>
-                </h3>
-                <p>
-                    All information, materials, documents, and intellectual property contained within this site are confidential and proprietary to TAU Africa Foundation. You agree NOT to disclose, share, copy, or distribute any content outside of internal arrangements or without prior written consent from TAU Africa Foundation or its founders.
-                </p>
-                <div class="button-group">
-                    <button class="btn-accept" onclick="acceptAgreement('nda')">Accept</button>
-                    <button class="btn-deny" onclick="denyAgreement('nda')">Deny</button>
-                </div>
-            </div>
-
-            <!-- Terms & Conditions Section -->
-            <div class="agreement-section">
-                <h3>
-                    2. Terms & Conditions 
-                    <span class="required-mark">*Required</span>
-                    <span class="status-indicator status-pending" id="termsStatus"></span>
-                </h3>
-                <p>
-                    By entering this portal, you agree to TAU Africa Foundation, Valenta Holdings, and all parts of the organization's terms and conditions, rules and regulations, and accept to be bound by them. This includes compliance with our code of conduct, ethical standards, and operational policies.
-                </p>
-                <div class="button-group">
-                    <button class="btn-accept" onclick="acceptAgreement('terms')">Accept</button>
-                    <button class="btn-deny" onclick="denyAgreement('terms')">Deny</button>
-                </div>
-            </div>
-
-            <!-- Value Sharing Section -->
-            <div class="agreement-section">
-                <h3>
-                    3. Value Sharing Commitment 
-                    <span class="optional-mark">(Optional)</span>
-                    <span class="status-indicator status-pending" id="valueStatus"></span>
-                </h3>
-                <p>
-                    TAU Africa operates on a value-based economy. Do you accept to share your values (knowledge, skills, work, services, products, asset, property etc) with the network to participate in the Kabiru mining ecosystem and wealth creation opportunities?
-                </p>
-                <div class="button-group">
-                    <button class="btn-accept" onclick="acceptAgreement('value')">Yes, I Accept</button>
-                    <button class="btn-deny" onclick="denyAgreement('value')">No, Maybe Later</button>
-                </div>
-            </div>
-
-            <button class="proceed-btn" id="proceedBtn" onclick="proceedToApp()" disabled>
-                Proceed to TAU Africa Portal
-            </button>
-
-            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9em;">
-                By proceeding, you acknowledge that you have read and understood all agreements above.
-            </p>
-        </div>
-    </div>
-
-    <script>
-        const agreements = {
-            nda: false,
-            terms: false,
-            value: null  // optional
-        };
-
-        function acceptAgreement(type) {
-            agreements[type] = true;
-            document.getElementById(type + 'Status').className = 'status-indicator status-accepted';
-            checkAllRequired();
-        }
-
-        function denyAgreement(type) {
-            if (type === 'value') {
-                // Optional - just mark as denied but allow proceed
-                agreements[type] = false;
-                document.getElementById(type + 'Status').className = 'status-indicator status-denied';
-                checkAllRequired();
-            } else {
-                // Required - show alert
-                agreements[type] = false;
-                document.getElementById(type + 'Status').className = 'status-indicator status-denied';
-                alert('This agreement is required to access the TAU Africa Portal. Please accept to continue.');
-                checkAllRequired();
-            }
-        }
-
-        function checkAllRequired() {
-            const allRequiredAccepted = agreements.nda && agreements.terms;
-            const proceedBtn = document.getElementById('proceedBtn');
-            
-            if (allRequiredAccepted) {
-                proceedBtn.disabled = false;
-                proceedBtn.classList.add('active');
-            } else {
-                proceedBtn.disabled = true;
-                proceedBtn.classList.remove('active');
-            }
-        }
-
-        function proceedToApp() {
-            if (agreements.nda && agreements.terms) {
-                // Store agreement acceptance
-                localStorage.setItem('tauAgreementsAccepted', 'true');
-                localStorage.setItem('tauValueSharing', agreements.value);
-                
-                // Hide welcome overlay
-                document.getElementById('welcomeOverlay').classList.add('hidden');
-            }
-        }
-
-        // Check if user has already accepted
-        window.addEventListener('DOMContentLoaded', function() {
-            const hasAccepted = localStorage.getItem('tauAgreementsAccepted');
-            if (hasAccepted === 'true') {
-                document.getElementById('welcomeOverlay').classList.add('hidden');
-            }
-        });
-
+        <script>
         // Register Service Worker for PWA
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -766,10 +649,10 @@
         <header>
             <h1>TAU AFRICA FOUNDATION</h1>
             <div class="scrolling-text">
-                <span>Community wealth creation through value chain tracking, backed by inherent Community values • Mining Kabiru digital asset through Proof-of-Value (PoV) mechanisms • Join our wealth creation program • Community wealth creation through value chain tracking, backed by inherent Community values • Mining Kabiru digital asset through Proof-of-Value (PoV) mechanism • Join our community wealth creation program</span>
+                <span>Community wealth creation through value chain tracking, backed by inherent Community values • Earning Kabiru digital Credits through Proof-of-Value (PoV) mechanisms • Join our wealth creation program • Community wealth creation through value chain tracking, backed by inherent Community values • Mining Kabiru digital asset through Proof-of-Value (PoV) mechanism • Join our community wealth creation program</span>
             </div>
-            <p class="tagline">Building Africa's Sovereign Wealth Through collaborative Kabiru Digital value Currency</p>
-            <p style="margin-top: 20px; font-size: 1.1em;"> Foundation's Strategic Blueprint 2025</p>
+            <p class="tagline">Building Africa's Sovereign Wealth Through collaborative Kabiru Digital value Credits</p>
+            <p style="margin-top: 20px; font-size: 1.1em;">Strategic Vision Blueprint</p>
         </header>
 
         <nav>
@@ -793,59 +676,34 @@
                 <h2>Our Vision & Mission</h2>
                 
                 <div class="vision-statement">
-                    "To build the leading International grassroot community organizations, Foundation and Corporations that champion Africa's Socio-Education Awakening, Socio-Economic Empowerment, and Socio-Financial Literacy - building the Africa Wealth Bank for all Africans"
+                    "To build an ecosystem of digital applications that provide utility values to Africa's Education, Economic Empowerment, and Financial Literacy - building the new Africa's Wealth creation and protection programs for all Africans"
                 </div>
 
-                <h3>Founded in 2021 - Born from AUFFI 2019</h3>
-                <p><strong>TAU Africa International Foundation was born from the oracular AUFFI of 2019.</strong> AUFFI and TAU Foundation together form the spiritual and practical foundation for Africa's transformation. The organization was established with a singular purpose: to transform Africa's economic landscape through innovative digital financial technology and community empowerment.</p>
+                <h3>Founded in 2021 by Magero Asa Rateng and Team,  - History of TAU Africa</h3>
+                <p><strong>TAU Africa Grou was founded from the oracular AUFFI of 2019.</strong> AUFFI and TAU form part of the Social and practical foundation for Africa's transformation into the Aquarius world. The organization was established with a singular purpose: to transform Africa's social and economic landscape through innovative digital financial technology on community empowerment.</p>
                 
-                <div class="highlight-box">
-                    <h3>Founding Leadership Team</h3>
-                    <div style="margin-top: 20px;">
-                        <h4 style="color: white;">Founder, CEO & Visioner</h4>
-                        <p style="font-size: 1.1em; margin-bottom: 20px;">📌 <strong>Magero Asa Rateng</strong> - Tau vision carrier and founder who received the directive from Akoth, based on the Book of Oloo to establish TAU Africa Foundation for Oloo Awakening & Empowerment</p>
-                        
-                        <h4 style="color: white;">Co-Founders (Vision Stabilizers)</h4>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 20px;">
-                            <div>📌 <strong>Choli Mwene Mabira</strong><br/>Project Director, co-founder</div>
-                            <div>📌 <strong>Ochieng Orudi Ayuak</strong><br/>Public Relations, co-founder</div>
-                        </div>
-                        <p style="font-size: 0.95em; font-style: italic;">Co-founders who help stabilize the vision and ensure vision alignment and organizational coherence</p>
-                        
-                        <h4 style="color: white; margin-top: 25px;">Founding Partners - Valenta & Project Development</h4>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
-                            <div>📌 <strong>Martha Kimanzi</strong><br/><em>Diaspora & Hospitality</em></div>
-                            <div>📌 <strong>Lorna Mugambi</strong><br/><em>Architect & county Planner</em></div>
-                            <div>📌 <strong>Peter Mwangi</strong><br/><em>High Court Advocate & Certified Public Accountant</em></div>
-                            <div>📌 <strong>Karaya Nderitu</strong><br/><em>Finance, Law & Banking, corporate structure</em></div>
-                            <div>📌 <strong>Allan Sikuku</strong><br/><em>Business Administration, Entrepreneurship & Community Development</em></div>
-                        </div>
-                        <p style="margin-top: 15px; font-size: 0.95em; font-style: italic;">Founding partners in Valenta and peripheral projects, helping establish the TALK Project phases</p>
-                    </div>
-                </div>
-
                 <div class="value-card" style="margin-top: 25px; border-left-color: #FFD700;">
                     <h4>🌟 Currently Onboarding New Members</h4>
-                    <p>TAU Foundation is actively onboarding new members of any category for building the internal operations and external partnerships for the Grand Plan 2026. Whether you seek to join as:</p>
+                    <p>Tau Africa is currently building the Kabiru Ecosystem, actively onboarding new users of any category as pioneers and Ambassadors of kabiru credits. Whether you seek to join as:</p>
                     <ul>
-                        <li><strong>TASK Members</strong> - Workers and engine builders</li>
-                        <li><strong>TALK Members</strong> - Supporters and fuel providers</li>
+                        <li><strong>TASK Members</strong> - Workers and core teams</li>
+                        <li><strong>TALK Members</strong> - Supporters and funding providers</li>
                         <li><strong>Partners</strong> - Independent, corporate, foundation, or institutional</li>
-                        <li><strong>Workers</strong> - Operational team members</li>
-                        <li><strong>Investors</strong> - Financial partners in the vision</li>
+                        <li><strong>Workers</strong> - Operational Stewardship > System Validators. Admins and System Agents</li>
+                        <li><strong>Investors</strong> - Financial partners in the financial sectors</li>
                     </ul>
-                    <p style="margin-top: 15px; font-weight: 600;">Join us in building Africa's economic future. Registration is open now through the TAU Main Application.</p>
+                    <p style="margin-top: 15px; font-weight: 600;">Join us in building Africa's newfrontier economic future. Registration is open at the Ecosystem  Family Tree now through the Kabiru.org Web App(after opening by chrome browser, find 'Add to home screen' to install to phone so you can access locally.</p>
                 </div>
                 
-                <p style="margin-top: 25px;">Having been registered in 2021, TAU began the establishment of <strong>TACEP Technical Training NITA Centre in Nairobi</strong>, conducting successful pilot test phases from 2023-2024. In 2025, TAU registered <strong>Valenta Holdings Company</strong> for member business projects, now establishing Kabiru for economic strongholds within our community to empower our society and Africa in general.</p>
+                <p style="margin-top: 25px;">Registered in 2021, TAU began the establishment of <strong>TACEP Technical Training NITA Centre in Nairobi</strong>, conducting successful pilot test phases from 2023-2024. In 2025, TAU registered <strong>Valenta Holdings Company</strong> To Establish Kabiru fintch digital products and member startups. Now establishing Kabiru digital credit system for value definitions within our closed community ecosystem to power our society and Africa in general with Trusted and Secure Value services.</p>
 
                 <div class="highlight-box">
-                    <h3>The Vision Carrier: Magero Asa Rateng and the Formidable Team</h3>
-                    <p>Hotep Rising Africa's Strength <strong>Magero Asa Rateng</strong> as the vision carrier, working alongside a formidable team with an unrelenting quest for spiritual freedom and an economically independent Africa. Magero and this dedicated team are building the blueprint of the New Africa Economic and Social ecosystems to resettle Africa.</p>
+                    <h3>The Vision Carrier: Magero Asa Rateng and the Team</h3>
+                    <p>Hotep Rising Africa's Strength <strong>Magero Asa Rateng</strong> as the vision carrier, working alongside a formidable team with an unrelenting quest for social, spiritual and economic freedom. Magero and this dedicated team are building the blueprint of New Africa's Economic and Social ecosystems to restore Africa.</p>
                     
-                    <p>The vision directive, motivation, and inspiration come from the <strong>Past struggles, Akoth and the Holy Book of Oloo</strong>, which unites all Africans from one single family tree and reinserts them back onto their earlier sockets. As the covenant scrolls of the blackman, this Book of Oloo (Sulwe) works on the vision of Akoth (custodian) to create Kikongo - the future pilgrimage home of all black souls.</p>
+                    <p>The vision directive, motivation, and inspiration come from the <strong>Past struggles, Akoth and the Holy Book of Oloo</strong>, which unites all Africans from one single family tree and reinserts them back onto their earlier sockets in the pyramid land. As the covenant scrolls of the blackman, this Book of Oloo (Sulwe) works on the vision of Akoth (custodian) to create Kikongo - the future pilgrimage home of all black souls.</p>
                     
-                    <p><strong>Great honor to Yie Kuom Chier mission</strong> for the staggering custodianship of the holy grail of the blackman. A fresh call to work together and focus on rebuilding Africa by Africans is now the greatest call and necessity.</p>
+                    <p><strong>Great honor to Yie Kuom Chier mission</strong> for the staggering custodianship of the holy grail of the blackman. A fresh call to work harder and focus on rebuilding Africa's originality by Africans. This is now the greatest call and necessity.</p>
                 </div>
 
                 <h3>TAU: Dual Meaning and Purpose</h3>
@@ -864,8 +722,8 @@
                 <p>To establish systems and programs that will eradicate poverty and ignorance, change the conditions of Africa's economic inequality and disability, that is founded on Trusted sustainable financial literacy systems across the continent through the revolutionary Kabiru digital currency ecosystem.</p>
 
                 <div class="highlight-box">
-                    <h3>The Grand Vision: Africa Wealth Bank</h3>
-                    <p>When fully established, the TAU ecosystem will function to create and sustain the Africa's decentralized wealth bank - a sovereign financial system owned by and for Africans. Through collective participation, value creation, and community engagement, we're building a financial infrastructure that:</p>
+                    <h3>The Grand Vision: Africa Value Credit Bank(AVCB)</h3>
+                    <p>When fully established, the TAU ecosystem will function to create and sustain the Africa's decentralized credits wealth bank - a sovereign financial system owned by and for Africans. Through collective participation, value creation, and community engagement, we're building a financial infrastructure that:</p>
                     <ul>
                         <li>Empowers every African with access to wealth creation tools</li>
                         <li>Creates sustainable income streams for participants</li>
@@ -958,7 +816,7 @@
                     </div>
 
                     <div class="value-card">
-                        <h4>✨ Socio-Spiritual Restoration</h4>
+                        <h4>✨ Spiritual Restoration</h4>
                         <ul>
                             <li>Ancestral wisdom preservation</li>
                             <li>Sacred site restoration and protection</li>
@@ -970,7 +828,7 @@
                     </div>
 
                     <div class="value-card">
-                        <h4>🤝 Socio-Community Restoration</h4>
+                        <h4>🤝 Community Restoration</h4>
                         <ul>
                             <li>Community cohesion building</li>
                             <li>Traditional governance structures</li>
@@ -982,9 +840,9 @@
                 </div>
 
                 <h3>AUFFI's Continental Presence</h3>
-                <p>AUFFI is already operational in numerous African countries, serving as the primary Unity vehicle for:</p>
+                <p>AUFFI is already uniting Africans from different regions, serving as the primary Unity vehicle for:</p>
                 <ul>
-                    <li>Organizing grassroots awakening movements</li>
+                    <li>Organizing grassroots awakening events</li>
                     <li>Establishing local chapters and community hubs</li>
                     <li>Conducting cultural restoration workshops</li>
                     <li>Facilitating Pan-African dialogue and cooperation</li>
